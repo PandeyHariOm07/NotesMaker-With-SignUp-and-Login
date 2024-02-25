@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesMaker", "NotesMaker\NotesMaker.csproj", "{AA8C0804-7C12-4261-8F11-62F2719F2778}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution", "Solution\Solution.csproj", "{19E1A1AB-33D6-4F54-ACDB-4AC42EA070A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{01EFAD1B-E744-4959-A2E6-5BB197B9D1B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AA8C0804-7C12-4261-8F11-62F2719F2778}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA8C0804-7C12-4261-8F11-62F2719F2778}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA8C0804-7C12-4261-8F11-62F2719F2778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E1A1AB-33D6-4F54-ACDB-4AC42EA070A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E1A1AB-33D6-4F54-ACDB-4AC42EA070A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E1A1AB-33D6-4F54-ACDB-4AC42EA070A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E1A1AB-33D6-4F54-ACDB-4AC42EA070A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01EFAD1B-E744-4959-A2E6-5BB197B9D1B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01EFAD1B-E744-4959-A2E6-5BB197B9D1B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01EFAD1B-E744-4959-A2E6-5BB197B9D1B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01EFAD1B-E744-4959-A2E6-5BB197B9D1B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

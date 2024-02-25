@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NotesMaker
+namespace NotesMaker.Interfaces
 {
-    public class NotesController
+    public interface IUser
     {
-
+        int SignUp(string email, string username, string password);
     }
 }
