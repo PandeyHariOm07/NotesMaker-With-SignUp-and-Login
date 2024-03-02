@@ -9,5 +9,6 @@ namespace NotesMaker.Interfaces
     public interface IUser
     {
         int SignUp(string email, string username, string password);
+        List<string> LoginUser(string email, string password);
     }
 }
