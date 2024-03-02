@@ -33,5 +33,28 @@ namespace NotesMaker
                     }
                 }
             }
+
+            public List<string> LoginUser(string email, string password)
+        {
+            List<string> result = new List<string>();
+           using(_conObj = new SqlConnection(SqlConnectionStrings.GetConnectionString()))
+            {
+                using(SqlCommand cmdObj = new SqlCommand("select * from users where @id = email_id and @pass = password", _conObj))
+                {
+                    cmdObj.Parameters.AddWithValue("@id", email);
+                    cmdObj.Parameters.AddWithValue("@pass", password);
+                    _conObj.Open();
+                    SqlDataReader reader = cmdObj.ExecuteReader();
+                    if (reader.HasRows)
+                    {
+                        while(reader.Read())
+                        {
+                            result.Add(reader.GetString(0));
+                        }
+                    }
+                    return result;
+                }
+            }
+        }
         }
 }
