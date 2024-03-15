@@ -1,0 +1,32 @@
+     <div class=" d-flex justify-content-center" style="margin-top: 2%;">
+      <div class="wrapper">
+         <div class="title">
+            Login Form
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" [(ngModel)]="email" [ngModelOptions]="{ standalone: true }" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" [(ngModel)]="Password" [ngModelOptions]="{ standalone: true }" required>
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Forgot password?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" (click)="validateForm()">
+            </div>
+            <div class="signup-link">
+               Not a member? <a routerLink="/signUp" routerLinkActive="router-link-active">Signup now</a>
+            </div>
+         </form>
+      </div>
+     </div>
