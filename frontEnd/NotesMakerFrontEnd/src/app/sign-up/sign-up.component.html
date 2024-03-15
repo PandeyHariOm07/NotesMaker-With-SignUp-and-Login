@@ -1,0 +1,31 @@
+<div class=" d-flex justify-content-center" style="margin-top: 2%;">
+    <div class="wrapper">
+       <div class="title">
+          SignUp Form
+       </div>
+       <form action="#">
+          <div class="field">
+             <input type="text" [(ngModel)]="email" name="email" required>
+             <label>Email Address</label>
+          </div>
+          <div class="field">
+            <input type="text" [(ngModel)]="name" name="name" required>
+            <label>Name</label>
+         </div>
+          <div class="field">
+             <input type="password" [(ngModel)]="Password" name="Password" required>
+             <label>Password</label>
+          </div>
+          <div class="field">
+            <input type="password" required>
+            <label>Confirm Password</label>
+         </div>
+          <div class="field">
+             <input type="submit" (click)="validateForm()" value="SignUp">
+          </div>
+          <div class="login-link">
+             Already a member? <a routerLink="/login" routerLinkActive="router-link-active">Login</a>
+          </div>
+       </form>
+    </div>
+   </div>
